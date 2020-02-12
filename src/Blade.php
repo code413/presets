@@ -12,6 +12,8 @@ class Blade extends LaravelPreset
         static::cleanViewsDirectory();
         
         static::copyViewBoilerplates();
+        
+        static::updateMix();
     }
 
     protected static function cleanViewsDirectory()
@@ -21,6 +23,11 @@ class Blade extends LaravelPreset
 
     protected static function copyViewBoilerplates()
     {
-        File::copyDirectory(__DIR__ . '/../resources/views', resource_path('views'));
+        File::copyDirectory(__DIR__ . '/../resources/blade/views', resource_path('views'));
+    }
+
+    protected static function updateMix()
+    {
+        File::copy(__DIR__ . '/../resources/blade/webpack.mix.js', base_path('webpack.mix.js'));
     }
 }
