@@ -1,0 +1,34 @@
+{
+  "name": "code413/presets",
+  "description": "Our default Laravel presets",
+  "keywords": [
+    "laravel",
+    "preset"
+  ],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Matt Daneshvar",
+      "email": "matt.daneshvar@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "Code413\\Presets\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Code413\\Presets\\PresetsServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "laravel/framework": "6.2"
+  }
+}
