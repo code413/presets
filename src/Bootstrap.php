@@ -20,4 +20,11 @@ class Bootstrap extends BasePreset
 
         File::copyDirectory(__DIR__ . '/../resources/bootstrap/js', resource_path('js'));
     }
+
+    protected static function updateSass()
+    {
+        File::cleanDirectory(resource_path('sass'));
+
+        File::copyDirectory(__DIR__ . '/../resources/bootstrap/sass', resource_path('sass'));
+    }
 }
