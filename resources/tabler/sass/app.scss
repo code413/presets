@@ -1,0 +1,14 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+//Variables
+@import '~tabler-ui/src/assets/scss/variables',
+'./abstract/variables';
+
+// Vendor
+@import '~bootstrap/scss/bootstrap',
+'~tabler-ui/src/assets/scss/dashboard/dashboard';
+
+// Base
+@import './base/base';
+@import './base/typography';

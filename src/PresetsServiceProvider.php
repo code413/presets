@@ -29,5 +29,14 @@ class PresetsServiceProvider extends ServiceProvider
 
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
+
+        PresetCommand::macro('tabler', function ($command)
+        {
+            Tabler::install();
+
+            $command->info('Code413\'s tabler preset is successfully installed!');
+
+            $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
+        });
     }
 }   

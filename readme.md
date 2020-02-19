@@ -17,6 +17,7 @@ php artisan preset blade
 ## Available Presets
 - blade
 - bootstrap
+- tabler
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
