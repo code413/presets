@@ -11,7 +11,7 @@ composer require code413/presets --dev
 
 Publish any of the available presets.
 ```bash
-php artisan preset blade 
+php artisan ui blade 
 ```
 
 ## Available Presets
