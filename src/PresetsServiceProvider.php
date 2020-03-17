@@ -2,8 +2,8 @@
 
 namespace Code413\Presets;
 
-use Illuminate\Foundation\Console\PresetCommand;
 use Illuminate\Support\ServiceProvider;
+use Laravel\Ui\UiCommand;
 
 class PresetsServiceProvider extends ServiceProvider
 {
@@ -14,14 +14,14 @@ class PresetsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        PresetCommand::macro('blade', function ($command)
+        UiCommand::macro('blade', function ($command)
         {
             Blade::install();
             
             $command->info('Code413\'s blade preset is successfully installed!');
         });
 
-        PresetCommand::macro('bootstrap', function ($command)
+        UiCommand::macro('bootstrap', function ($command)
         {
             Bootstrap::install();
 
@@ -30,7 +30,7 @@ class PresetsServiceProvider extends ServiceProvider
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
 
-        PresetCommand::macro('tabler', function ($command)
+        UiCommand::macro('tabler', function ($command)
         {
             Tabler::install();
 

@@ -4,6 +4,9 @@
 // Variables
 @import 'abstract/variables';
 
+// Vendor
+@import '~bootstrap/scss/bootstrap';
+
 // Base
 @import './base/base';
 @import './base/typography';

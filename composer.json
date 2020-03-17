@@ -14,7 +14,8 @@
     }
   ],
   "require": {
-    "php": "^7.2"
+    "php": "^7.2",
+    "laravel/ui": "^2.0"
   },
   "autoload": {
     "psr-4": {
@@ -27,8 +28,5 @@
         "Code413\\Presets\\PresetsServiceProvider"
       ]
     }
-  },
-  "require-dev": {
-    "laravel/framework": "6.2"
   }
 }

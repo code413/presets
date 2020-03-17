@@ -2,7 +2,7 @@
 
 namespace Code413\Presets;
 
-use Illuminate\Foundation\Console\Presets\Bootstrap as BasePreset;
+use Laravel\Ui\Presets\Bootstrap as BasePreset;
 use Illuminate\Support\Facades\File;
 
 class Bootstrap extends BasePreset

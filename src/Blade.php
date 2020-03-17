@@ -2,7 +2,7 @@
 
 namespace Code413\Presets;
 
-use Illuminate\Foundation\Console\Presets\Preset as LaravelPreset;
+use Laravel\Ui\Presets\Preset as LaravelPreset;
 use Illuminate\Support\Facades\File;
 
 class Blade extends LaravelPreset
