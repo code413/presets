@@ -19,5 +19,12 @@ php artisan preset blade
 - bootstrap
 - tabler
 
+## Compatibility
+| Laravel  | Code413/Presets |
+|:---:|:---:|
+| 5  | 1  |
+| 6  | 1  |
+| 7  | 2  |
+
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
