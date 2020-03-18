@@ -38,5 +38,14 @@ class PresetsServiceProvider extends ServiceProvider
 
             $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
         });
+
+        UiCommand::macro('tailwind', function ($command)
+        {
+            Tailwind::install();
+
+            $command->info('Code413\'s tailwind preset is successfully installed!');
+
+            $command->comment('Please run "npm install && npm run dev" to compile your fresh scaffolding.');
+        });
     }
 }   

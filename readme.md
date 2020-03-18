@@ -18,6 +18,7 @@ php artisan ui blade
 - blade
 - bootstrap
 - tabler
+- tailwind
 
 ## Compatibility
 | Laravel  | Code413/Presets |
